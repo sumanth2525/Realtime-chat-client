@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Westmire Wired Chat & Voice</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header>
+    <div class="logo">Westmire Wired</div>
+    <nav>
+      <button id="join-audio">Join Voice</button>
+      <button id="leave-audio" disabled>Leave Voice</button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="text">
+        <h1>The Westmire<br/><strong>A56 Headset</strong></h1>
+        <div class="hero-buttons">
+          <button class="btn-primary">Buy Now</button>
+          <button class="btn-secondary">Shop All</button>
+        </div>
+      </div>
+      <div class="image">
+        <img src="img/headset.png" alt="A56 Headset" />
+      </div>
+    </section>
+
+    <section class="chat">
+      <div id="messages"></div>
+      <form id="form">
+        <input id="input" autocomplete="off" placeholder="Type a message…" />
+        <button id="send">Send</button>
+      </form>
+    </section>
+  </main>
+
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
